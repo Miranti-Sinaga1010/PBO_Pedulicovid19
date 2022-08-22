@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2020 9:48:48 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.entity.Perkembangancovid19" table="PERKEMBANGANCOVID19" schema="PUBLIC" catalog="PEDULICOVID19" optimistic-lock="version">
+        <id name="idperubahan" type="int">
+            <column name="IDPERUBAHAN" />
+            <generator class="assigned" />
+        </id>
+        <property name="waktuperubahan" type="string">
+            <column name="WAKTUPERUBAHAN" length="50" not-null="true" />
+        </property>
+        <property name="terkonfirmasi" type="int">
+            <column name="TERKONFIRMASI" not-null="true" />
+        </property>
+        <property name="dirawat" type="int">
+            <column name="DIRAWAT" not-null="true" />
+        </property>
+        <property name="sembuh" type="int">
+            <column name="SEMBUH" not-null="true" />
+        </property>
+        <property name="meninggal" type="int">
+            <column name="MENINGGAL" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

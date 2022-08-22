@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="846.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GejalaController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="668.0" prefWidth="737.0" style="-fx-background-color: #0c6696;">
+         <children>
+            <Label layoutX="259.0" layoutY="81.0" prefHeight="17.0" prefWidth="247.0" text="7 Gejala Terinfeksi Virus Corona" textFill="#27cf76">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="97.0" text="1. Demam" textFill="#f2eaea">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="115.0" layoutX="603.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../PeduliCOVID19/src/image/demam.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="177.0" text="2. Batuk Kering" textFill="#f2e8e8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="93.0" layoutX="603.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../PeduliCOVID19/src/image/batuk.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="229.0" />
+            <Label layoutX="33.0" layoutY="260.0" text="3. Napas Pendek" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="93.0" layoutX="600.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../PeduliCOVID19/src/image/sesak.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="345.0" text="4. Menggigil dan tubuh tersasa sakit" textFill="#eee7e7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="67.0" fitWidth="94.0" layoutX="600.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../PeduliCOVID19/src/image/menggigil.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="425.0" text="5. Mata Merah" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="93.0" layoutX="600.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../PeduliCOVID19/src/image/matamerah.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="504.0" text="6. Masalah Pencernaan" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="49.0" fitWidth="104.0" layoutX="600.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../PeduliCOVID19/src/image/pencernaan.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="590.0" text="7. Kelelahan" textFill="#f5f3f3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="88.0" layoutX="600.0" layoutY="609.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../PeduliCOVID19/src/image/lelah.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="17.0" prefHeight="49.0" prefWidth="718.0">
+               <children>
+                  <Button layoutX="18.0" layoutY="19.0" mnemonicParsing="false" onAction="#menuDashboard" text="Dashboard" />
+                  <Button layoutX="91.0" layoutY="19.0" mnemonicParsing="false" onAction="#menuBiodata" prefHeight="25.0" prefWidth="67.0" text="Biodata" />
+                  <Button layoutX="157.0" layoutY="19.0" mnemonicParsing="false" onAction="#menuAbout" prefHeight="25.0" prefWidth="56.0" text="About" />
+                  <Accordion />
+                  <Button layoutX="578.0" layoutY="19.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="56.0" text="Exit" />
+                  <Button layoutX="640.0" layoutY="18.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+                  <Pane layoutX="-16.0" layoutY="54.0" prefHeight="25.0" prefWidth="737.0" style="-fx-background-color: #00008b;">
+                     <children>
+                        <Accordion />
+                        <Label layoutX="18.0" layoutY="3.0" prefHeight="20.0" prefWidth="310.0" text="Gejala COVID 19" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Accordion layoutX="10.0" layoutY="10.0" />
+            <TextArea layoutX="33.0" layoutY="114.0" prefHeight="38.0" prefWidth="544.0" text="Demam merupakan salah satu kunci dari Covid19. &#10;Setiap orang bisa memiliki suhu demam yang berbeda dari ptokan suhu normal sebelumnya. &#10;Salah satu gejala demam yang paling umum yaitu suhu tubuh anda naik di sore dan menjelang &#10;petang, itu adalah cara umum virus menyerang." />
+            <TextArea layoutX="33.0" layoutY="198.0" prefHeight="38.0" prefWidth="544.0" text="Batuk merupakan gejala umum dari virus corona. &#10;Akan tetapi batuk yang muncul bukan batuk biasa melainkan batuk yang muncul rasa geli pada &#10;tenggorokan, batuk karena gejala covid sangat mengganggu. Batuk kering yang seolah berasal &#10;dari sesuatu yang jauh dari dada, seperti tabung bronkial anda meradang atau teriritasi" />
+            <TextArea layoutX="33.0" layoutY="278.0" prefHeight="38.0" prefWidth="544.0" text="Sesak napas umumnya muncul sebagai tanda penyakit mencapai tahap serius. &#10;Saat anda merasa dada anda seperti diikat maka anda harus bertindak cepat. &#10;Adapun tanda-tanda daruratnya adalah :&#10;-  rasa sakit terus menerus atau tekanan pada dada&#10;-  bibir atau wajah anda menjadi kebiruan yang menjadi indikasi kurangnya oksigen yang masuk" />
+            <TextArea layoutX="33.0" layoutY="362.0" prefHeight="38.0" prefWidth="544.0" text="Penderita mengalami kedinginan seperti kondisi flu ringan serta sendi dan otot-otot yang &#10;membuatnya susah membedakan apakah itu flu atau Covid19. &#10;Yang perlu dierhatikan tanda-tanda yang berpotensi sebagai gejala covid19 itu muncul dan &#10;tak juga hilang setelah seminggu atau lebih.  " />
+            <TextArea layoutX="33.0" layoutY="442.0" prefHeight="49.0" prefWidth="544.0" text="Sekitar 1 atau 3 persen penderita Covid19 mengalami konjungvitis atau mata merah muda. &#10;Jika kondisi ini ada maka potensi untuk menularkan ada. Konjungtivitas terjadi akibat peradangan &#10;karena adanya virus pada lapisan jaringan tipis dan transparan yang menutupi bagian putih mata&#10;dan bagian dalam kelompok mata yang disebut konjungtiva. " />
+            <TextArea layoutX="33.0" layoutY="521.0" prefHeight="49.0" prefWidth="544.0" text="Dalam penelitian di China mereka melihat bebrapa pasien yang paling awal sekitar 200 ditemukan &#10;gejala pencernaan. Studi tersebut menunjukkan, saat gejala awal terinfeksi bebrapa penderita &#10;mengalami masalah pencernaan seperti diare dan sering kali tak disertai demam" />
+            <TextArea layoutX="33.0" layoutY="609.0" prefHeight="49.0" prefWidth="544.0" text="Orang yang mengalami kelelahan ekstrem bisa menjadi tanda awal virus corona. Laporan sejumlah &#10;penelitian mengungkapkan orang orang yang telah pulih dari corona mengaku masih merasa &#10;kelelahan dan kekurangan energi setelah masa pemulihan beberapa minggu." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

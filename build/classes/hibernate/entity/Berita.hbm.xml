@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2020 9:48:48 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.entity.Berita" table="BERITA" schema="PUBLIC" catalog="PEDULICOVID19" optimistic-lock="version">
+        <id name="idberita" type="int">
+            <column name="IDBERITA" />
+            <generator class="assigned" />
+        </id>
+        <property name="waktuberita" type="string">
+            <column name="WAKTUBERITA" length="50" not-null="true" />
+        </property>
+        <property name="judul" type="string">
+            <column name="JUDUL" length="100" not-null="true" />
+        </property>
+        <property name="detail" type="string">
+            <column name="DETAIL" length="500" not-null="true" />
+        </property>
+        <property name="sumber" type="string">
+            <column name="SUMBER" length="150" not-null="true" />
+        </property>
+        <property name="file" type="string">
+            <column name="FILE" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.BiodataController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="904.0" style="-fx-background-color: #0c6696;">
+         <children>
+            <Button layoutX="18.0" layoutY="20.0" mnemonicParsing="false" onAction="#menuDashboard" text="Dashboard" />
+            <Button layoutX="91.0" layoutY="20.0" mnemonicParsing="false" onAction="#menuBiodata" prefHeight="25.0" prefWidth="67.0" text="Biodata" />
+            <Button layoutX="157.0" layoutY="20.0" mnemonicParsing="false" onAction="#menuAbout" prefHeight="25.0" prefWidth="56.0" text="About" />
+            <Button layoutX="849.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+            <Button layoutX="839.0" layoutY="34.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+            <Pane layoutX="-2.0" layoutY="63.0" prefHeight="40.0" prefWidth="906.0" style="-fx-background-color: #00008b;">
+               <children>
+                  <Accordion />
+                  <Label layoutX="8.0" layoutY="10.0" prefHeight="20.0" prefWidth="310.0" text="Cek Resiko Terjangkit Covid19" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <AnchorPane id="AnchorPane" layoutX="-2.0" layoutY="105.0" prefHeight="415.0" prefWidth="895.0">
+               <children>
+                  <TableView fx:id="tvBiodata" layoutX="23.0" layoutY="62.0" prefHeight="291.0" prefWidth="503.0">
+                     <columns>
+                        <TableColumn fx:id="colUsername" prefWidth="240.0" text="Username" />
+                        <TableColumn fx:id="colPassword" prefWidth="262.0" text=" Password" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="39.0" layoutY="23.0" text="Biodata User" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="590.0" layoutY="138.0" prefHeight="160.0" prefWidth="90.0" spacing="23.0">
+                     <children>
+                        <Label text="Username" textFill="#f5ebeb" />
+                        <Label text="Password" textFill="#f8f7f7" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="679.0" layoutY="135.0" prefHeight="70.0" prefWidth="195.0" spacing="15.0">
+                     <children>
+                        <TextField fx:id="txtUsername" />
+                        <TextField fx:id="txtPassword" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnInsert" layoutX="575.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Insert" />
+                  <Button fx:id="btnUpdate" layoutX="770.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Update" />
+                  <Button fx:id="btnDelete" layoutX="828.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Delete" />
+                  <Label layoutX="567.0" layoutY="36.0" text="CRUD  Biodata" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

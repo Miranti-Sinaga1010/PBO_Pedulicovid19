@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="793.0" style="-fx-background-color: #0c6696;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LayarDashboardController">
+   <children>
+      <Pane layoutX="2.0" layoutY="139.0" prefHeight="350.0" prefWidth="200.0" />
+      <Pane layoutX="202.0" layoutY="145.0" prefHeight="400.0" prefWidth="591.0">
+         <children>
+            <Pane layoutX="33.0" layoutY="150.0" prefHeight="106.0" prefWidth="122.0">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="93.0" layoutX="16.0" layoutY="-11.0">
+                     <image>
+                        <Image url="@../image/statistik.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="6.0" layoutY="64.0" mnemonicParsing="false" onAction="#statistik" prefHeight="25.0" prefWidth="111.0" text="Statistik Covid19" />
+               </children>
+            </Pane>
+            <Pane layoutX="34.0" layoutY="266.0" prefHeight="106.0" prefWidth="122.0">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="105.0" layoutX="16.0" layoutY="2.0">
+                     <image>
+                        <Image url="@../image/informasi.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnInformasi" layoutX="15.0" layoutY="77.0" mnemonicParsing="false" onAction="#actionInformasi" text="Informasi Covid19" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="71.0" fitWidth="111.0" layoutX="447.0" layoutY="270.0">
+               <image>
+                  <Image url="@../image/zonamerah.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="111.0" layoutX="445.0" layoutY="141.0">
+               <image>
+                  <Image url="@../image/chatboxcorona.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="206.0" layoutY="141.0" prefHeight="106.0" prefWidth="122.0">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="111.0" layoutX="21.0">
+                     <image>
+                        <Image url="@../image/beritacovid.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="32.0" layoutY="74.0" mnemonicParsing="false" onAction="#berita" prefHeight="25.0" prefWidth="93.0" text="Berita Covid19" />
+               </children>
+            </Pane>
+            <Button fx:id="btnGejala" layoutX="248.0" layoutY="344.0" mnemonicParsing="false" onAction="#actionGejala" text="Gejala Covid19" />
+            <Button fx:id="btnTips" layoutX="50.0" layoutY="84.0" mnemonicParsing="false" onAction="#actionTips" text="Tips Pencegahan" />
+            <Button fx:id="btnWilayah" layoutX="438.0" layoutY="344.0" mnemonicParsing="false" onAction="#actionWilayah" text="Wilayah Zona Merah" />
+            <Button fx:id="btnDonasi" layoutX="460.0" layoutY="84.0" mnemonicParsing="false" onAction="#actionDonasi" prefHeight="25.0" prefWidth="93.0" text="Donasi" />
+            <Button fx:id="btnCekresiko" layoutX="246.0" layoutY="83.0" mnemonicParsing="false" onAction="#actionCek" text="Cek Resiko" />
+         </children>
+      </Pane>
+      <Pane layoutX="-1.0" prefHeight="92.0" prefWidth="792.0">
+         <children>
+            <Button layoutX="18.0" layoutY="19.0" mnemonicParsing="false" onAction="#menuDashboard" prefHeight="30.0" prefWidth="81.0" text="Dashboard" />
+            <Button layoutX="104.0" layoutY="19.0" mnemonicParsing="false" onAction="#menuBiodata" prefHeight="30.0" prefWidth="93.0" text="Biodata" />
+            <Button layoutX="203.0" layoutY="19.0" mnemonicParsing="false" onAction="#menuAbout" prefHeight="30.0" prefWidth="67.0" text="About" />
+            <Accordion />
+            <Button layoutX="720.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="51.0" text="Exit" />
+            <Button layoutX="705.0" layoutY="47.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="81.0" text="Logout" />
+         </children>
+      </Pane>
+      <Pane layoutY="90.0" prefHeight="40.0" prefWidth="792.0" style="-fx-background-color: #00008b;">
+         <children>
+            <Accordion />
+            <Label layoutX="337.0" layoutY="10.0" prefHeight="20.0" prefWidth="174.0" text="Aplikasi Peduli Covid-19" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="252.0" prefHeight="54.0" prefWidth="177.0" style="-fx-background-color: #282828;">
+         <children>
+            <Label fx:id="sembuh_lbl" layoutX="8.0" layoutY="14.0" prefHeight="35.0" prefWidth="81.0" text="75" textFill="#149717">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus_sembuh" layoutX="91.0" layoutY="21.0" prefHeight="20.0" prefWidth="40.0" text="+ 11" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="21.0" text="Kasus" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="11.0" layoutY="233.0" prefHeight="30.0" prefWidth="174.0" style="-fx-background-color: #149717;">
+         <children>
+            <Label layoutX="32.0" layoutY="2.0" prefHeight="25.0" prefWidth="122.0" text="SEMBUH" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="349.0" prefHeight="54.0" prefWidth="177.0" style="-fx-background-color: #282828;">
+         <children>
+            <Label fx:id="dirawat_lbl" layoutX="8.0" layoutY="14.0" prefHeight="35.0" prefWidth="81.0" text="1,217" textFill="#cb983d">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus_dirawat" layoutX="91.0" layoutY="21.0" prefHeight="20.0" prefWidth="40.0" text="+ 129 " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="21.0" text="Kasus" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="11.0" layoutY="330.0" prefHeight="30.0" prefWidth="174.0" style="-fx-background-color: #cb983d;">
+         <children>
+            <Label layoutX="32.0" layoutY="2.0" prefHeight="25.0" prefWidth="122.0" text="DIRAWAT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="447.0" prefHeight="54.0" prefWidth="177.0" style="-fx-background-color: #282828;">
+         <children>
+            <Label fx:id="meninggal_lbl" layoutX="8.0" layoutY="14.0" prefHeight="35.0" prefWidth="81.0" text="122" textFill="#fc6769">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus_meninggal" layoutX="91.0" layoutY="21.0" prefHeight="20.0" prefWidth="40.0" text="+ 8" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="21.0" text="Kasus" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="11.0" layoutY="428.0" prefHeight="30.0" prefWidth="174.0" style="-fx-background-color: #fc6769;">
+         <children>
+            <Label layoutX="32.0" layoutY="2.0" prefHeight="25.0" prefWidth="122.0" text="MENINGGAL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="16.0" layoutY="508.0" text="Update : 31 Maret 2020 , 15:48" textFill="WHITE" />
+      <Pane layoutX="11.0" layoutY="167.0" prefHeight="54.0" prefWidth="177.0" style="-fx-background-color: #282828;">
+         <children>
+            <Label fx:id="terkonfirmasi_lbl" layoutY="14.0" prefHeight="35.0" prefWidth="81.0" text="1,441" textFill="#dd101c">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="18.0" text="Kasus" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus_terkonfirmasi" layoutX="89.0" layoutY="18.0" text="+ 129 " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutX="-1.0" layoutY="-24.0" prefHeight="30.0" prefWidth="174.0" style="-fx-background-color: #97040b;">
+               <children>
+                  <Label layoutX="32.0" layoutY="2.0" prefHeight="25.0" prefWidth="122.0" text="TERKONFIRMASI" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="409.0" layoutY="132.0" prefHeight="106.0" prefWidth="122.0" />
+      <Pane layoutX="644.0" layoutY="124.0" prefHeight="106.0" prefWidth="122.0">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="111.0" layoutX="6.0" layoutY="32.0">
+               <image>
+                  <Image url="@../image/donasipeduli.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="673.0" layoutY="360.0" mnemonicParsing="false" onAction="#chatbox" text="Chatbox" />
+      <Pane layoutX="424.0" layoutY="380.0" prefHeight="106.0" prefWidth="122.0">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="112.0" layoutX="10.0" layoutY="34.0">
+               <image>
+                  <Image url="@../image/gejalacorona.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="413.0" layoutY="132.0" prefHeight="106.0" prefWidth="122.0">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="111.0" layoutX="18.0" layoutY="25.0">
+               <image>
+                  <Image url="@../image/cekresiko.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="71.0" fitWidth="106.0" layoutX="248.0" layoutY="156.0">
+         <image>
+            <Image url="@../image/tips.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
